@@ -18,7 +18,7 @@ namespace Proyecto_Final_BDD.logic
 
         public void Conexionbd()
         {
-            conectarbd = new SqlConnection("Data Source=.;Initial Catalog=PROYECTO;Integrated Security=True"); //esto es lo que vas a cambiar robert
+            conectarbd = new SqlConnection("Data Source=.;Initial Catalog=VentaVehiculos;Integrated Security=True"); //esto es lo que vas a cambiar robert
             string mensaje;
             try
             {
