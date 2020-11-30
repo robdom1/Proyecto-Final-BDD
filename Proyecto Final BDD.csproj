@@ -69,6 +69,7 @@
     </Compile>
     <Compile Include="logic\Admin.cs" />
     <Compile Include="logic\Anuncio.cs" />
+    <Compile Include="logic\SincronizacionBD.cs" />
     <Compile Include="logic\Cliente.cs" />
     <Compile Include="logic\CuentaOrdinaria.cs" />
     <Compile Include="logic\Dealer.cs" />
