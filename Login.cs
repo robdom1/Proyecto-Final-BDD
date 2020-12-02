@@ -85,5 +85,35 @@ namespace Proyecto_Final_BDD
         {
 
         }
+
+        private void btnAcceder_Click(object sender, EventArgs e)
+        {
+
+            bool existe = true;
+            bool coincide = true;
+            
+            //verifica que existe el usuario
+            
+            if (existe){
+
+                //verifica la contraseña y nombre
+                if (coincide){
+                    Form1 fm = new Form1();
+                    this.Hide();
+                    fm.ShowDialog();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Nombre o contraseña incorrecta", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);       
+                }
+            }
+            
+            else
+            {
+                MessageBox.Show("No existe este usuario", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
+        }
     }
 }

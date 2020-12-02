@@ -36,8 +36,8 @@
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -108,6 +108,7 @@
             this.btnAcceder.TabIndex = 3;
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = false;
+            this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
             // 
             // linkLabel2
             // 
@@ -148,16 +149,6 @@
             this.shapeContainer1.TabIndex = 7;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape1
-            // 
-            this.lineShape1.Enabled = false;
-            this.lineShape1.Name = "lineShape1";
-            this.lineShape1.X1 = 314;
-            this.lineShape1.X2 = 759;
-            this.lineShape1.Y1 = 133;
-            this.lineShape1.Y2 = 133;
-            this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
-            // 
             // lineShape2
             // 
             this.lineShape2.Enabled = false;
@@ -167,6 +158,16 @@
             this.lineShape2.Y1 = 225;
             this.lineShape2.Y2 = 225;
             this.lineShape2.Click += new System.EventHandler(this.lineShape2_Click);
+            // 
+            // lineShape1
+            // 
+            this.lineShape1.Enabled = false;
+            this.lineShape1.Name = "lineShape1";
+            this.lineShape1.X1 = 314;
+            this.lineShape1.X2 = 759;
+            this.lineShape1.Y1 = 133;
+            this.lineShape1.Y2 = 133;
+            this.lineShape1.Click += new System.EventHandler(this.lineShape1_Click);
             // 
             // Login
             // 
