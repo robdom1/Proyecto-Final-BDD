@@ -15,6 +15,11 @@ namespace Proyecto_Final_BDD
         public Form1()
         {
             InitializeComponent();
+            imagen.Show();
+            panelSeleccion.Show();
+            panelCuenta.Hide();
+            panelVender.Hide();
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -68,6 +73,7 @@ namespace Proyecto_Final_BDD
             panelSeleccion.Show();
             panelCuenta.Hide();
             panelVender.Hide();
+          
 
         }
 
@@ -169,15 +175,16 @@ namespace Proyecto_Final_BDD
 
         private void lblVender_Click(object sender, EventArgs e)
         {
-            panelVender.Show();
+            panelSeleccion.Hide();
+            imagen.Hide();
+            panelCuenta.Show();
             PanelPaquetes.Hide();
             panelCompras.Hide();
             panelAnuncios.Hide();
-            imagen.Hide();
-            panelSeleccion.Hide();
-            
+            panelVender.Show();
 
-          
+
+
 
         }
     }
