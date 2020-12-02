@@ -141,6 +141,17 @@ namespace Proyecto_Final_BDD
             PanelRegistro.Show();
             PanelLogin.Hide();
             rbCliente.Checked = true;
+
+            txtCorreo.Text = "";
+            txtContrasena1.Text = "";
+            txtContrasena2.Text = "";
+            txtDireccion.Text = "";
+            txtTelefono.Text = "";
+            txtNombreCuenta.Text = "";
+            txtCelular.Text = "";
+           
+
+
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -195,14 +206,39 @@ namespace Proyecto_Final_BDD
 
 
 
-            bool camposVacios = true;
-            bool diferentesContra = false;
+            bool camposVacios;
+            bool diferentesContra;
             bool Registrado = false;
 
-           //Registrado =llamada a bd a ver si existe el correo
-           //diferentesContra = revisa que las contraseñas coinciden
-           //vacios = revisa campos vacios
+            //Registrado =llamada a bd a ver si existe el correo
 
+            if (txtCorreo.Text == "" || txtContrasena1.Text == "" || txtContrasena2.Text == "" ||
+             txtTelefono.Text == "" || txtNombreCuenta.Text == "" || txtCelular.Text == "")
+            {
+                camposVacios = true;
+            }
+            else
+            {
+                camposVacios = false;
+            }
+
+            if (rbDealer.Checked)
+            {
+                if(txtDireccion.Text == "")
+                {
+                    camposVacios = true;
+                }
+            }
+
+            if (txtContrasena1.Text != txtContrasena2.Text)
+            {
+                diferentesContra = true;
+            }
+            else
+            {
+                diferentesContra = false;
+            }
+           
             if (camposVacios){
                 MessageBox.Show("Existen campos vacios, completalos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
