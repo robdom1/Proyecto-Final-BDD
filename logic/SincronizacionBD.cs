@@ -42,6 +42,32 @@ namespace Proyecto_Final_BDD.logic
        
         //funciones de insertar y modificar en la BD
 
+        public void insertarVehiculo(Vehiculo nuevoVehiculo)
+        {
+            string marca = nuevoVehiculo.Marca;
+            string modelo = nuevoVehiculo.Modelo;
+            string tipo = nuevoVehiculo.Tipo;
+            string ano = Convert.ToString(nuevoVehiculo.Ano);
+            string motor = nuevoVehiculo.Motor;
+            string kilometraje = nuevoVehiculo.Kilometraje;
+            string estado = nuevoVehiculo.Estado;
+            string traccion = nuevoVehiculo.Traccion;
+            string transmision = nuevoVehiculo.Transmision;
+            string accesorios = nuevoVehiculo.Accesorios;
+            string interior = nuevoVehiculo.Interior;
+            string exterior = nuevoVehiculo.Exterior;
+            string combustible = nuevoVehiculo.Combustible;
+            string puertas = Convert.ToString(nuevoVehiculo.Puertas);
+            string pasajero = Convert.ToString(nuevoVehiculo.Pasajeros);
+
+            string comando = "INSERT INTO VEHICULO VALUES('" + marca + "','" + modelo + "','" + tipo + "','" + ano + "','" +
+                motor + "','" + kilometraje + "','" + estado + "','" + traccion + "','" + transmision + "','" + accesorios
+                + "','" + interior + "','" + exterior + "','" + combustible + "'," + puertas + "," + pasajero + ");";
+
+            SqlCommand cmdinsert = new SqlCommand(comando,conectarbd);
+        }
+
+
 
         public void cerrar()
         {
