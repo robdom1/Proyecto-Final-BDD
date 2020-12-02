@@ -15,6 +15,8 @@ namespace Proyecto_Final_BDD
         public Login()
         {
             InitializeComponent();
+            PanelRegistro.Hide();
+            PanelLogin.Show();
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -35,7 +37,7 @@ namespace Proyecto_Final_BDD
         private void textBox1_Enter(object sender, EventArgs e)
         {
             string texto = txtUsuario.Text.ToUpper();
-            if (texto == "USUARIO")
+            if (texto == "CORREO")
             {
                 txtUsuario.Text = "";
 
@@ -46,7 +48,7 @@ namespace Proyecto_Final_BDD
         {
             if (txtUsuario.Text == "")
             {
-                txtUsuario.Text = "USUARIO";
+                txtUsuario.Text = "CORREO";
 
             }
         }
@@ -114,6 +116,114 @@ namespace Proyecto_Final_BDD
                 MessageBox.Show("No existe este usuario", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+            txtContrasena2.UseSystemPasswordChar = true;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PanelRegistro.Hide();
+            PanelLogin.Show();
+            
+
+        }
+
+        private void linkLabel2_Click(object sender, EventArgs e)
+        {
+            PanelRegistro.Show();
+            PanelLogin.Hide();
+            rbCliente.Checked = true;
+        }
+
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbCliente.Checked)
+            {
+                lblFechaNacimiento.Visible = true;
+                cmbFechaNacimiento.Visible = true;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+
+
+               
+            }
+        }
+
+        private void rbDealer_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbDealer.Checked)
+            {
+                lblFechaNacimiento.Visible = false;
+                cmbFechaNacimiento.Visible = false;
+                lblDireccion.Visible = true;
+                txtDireccion.Visible = true;
+                cmbSexo.Visible = false;
+                lblSexo.Visible = false;
+
+            }
+        }
+
+        private void rbParticular_CheckedChanged(object sender, EventArgs e)
+        {
+            if (rbParticular.Checked)
+            {
+                lblFechaNacimiento.Visible = true;
+                cmbFechaNacimiento.Visible = true;
+                lblDireccion.Visible = false;
+                txtDireccion.Visible = false;
+
+
+
+            }
+        }
+
+        private void txtContrasena1_TextChanged(object sender, EventArgs e)
+        {
+            txtContrasena1.UseSystemPasswordChar = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+
+
+            bool camposVacios = true;
+            bool diferentesContra = false;
+            bool Registrado = false;
+
+           //Registrado =llamada a bd a ver si existe el correo
+           //diferentesContra = revisa que las contraseñas coinciden
+           //vacios = revisa campos vacios
+
+            if (camposVacios){
+                MessageBox.Show("Existen campos vacios, completalos.", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+            }
+            if (diferentesContra&&!camposVacios){
+                MessageBox.Show("Las contraseñas no coinciden", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            
+            if (Registrado){
+                MessageBox.Show("Correo Electronico en uso", "ADVERTENCIA", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+
+            if  (!Registrado && !diferentesContra && !camposVacios)
+            {
+                MessageBox.Show("Registro realizado con exito","Registro");
+                PanelRegistro.Hide();
+                PanelLogin.Show();
+
+
+
+            }
         }
     }
 }
