@@ -176,7 +176,7 @@ namespace Proyecto_Final_BDD
         private void lblVender_Click(object sender, EventArgs e)
         {
             panelSeleccion.Hide();
-            imagen.Hide();
+            imagen.Show();
             panelCuenta.Show();
             PanelPaquetes.Hide();
             panelCompras.Hide();
@@ -185,6 +185,45 @@ namespace Proyecto_Final_BDD
 
 
 
+
+        }
+
+        private void cmbTipos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_Enter(object sender, EventArgs e)
+        {
+            string texto = txtModelo.Text;
+            if (texto == "Modelo")
+            {
+                txtModelo.Text = "";
+
+            }
+        }
+
+        private void txtModelo_Leave(object sender, EventArgs e)
+        {
+            if (txtModelo.Text == "")
+            {
+                txtModelo.Text = "Modelo";
+
+            }
+        }
+
+        private void panelArriba_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelSeleccion_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

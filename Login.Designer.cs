@@ -36,41 +36,41 @@
             this.PanelLogin = new System.Windows.Forms.Panel();
             this.txtUsuario = new System.Windows.Forms.TextBox();
             this.txtContrasena = new System.Windows.Forms.TextBox();
-            this.btnAcceder = new System.Windows.Forms.Button();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.btnAcceder = new System.Windows.Forms.Button();
             this.shapeContainer2 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.PanelRegistro = new System.Windows.Forms.Panel();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblCorreo = new System.Windows.Forms.Label();
-            this.lblContrasena1 = new System.Windows.Forms.Label();
-            this.lblContrasena2 = new System.Windows.Forms.Label();
-            this.txtNombreCuenta = new System.Windows.Forms.TextBox();
-            this.txtCorreo = new System.Windows.Forms.TextBox();
-            this.txtContrasena1 = new System.Windows.Forms.TextBox();
-            this.txtContrasena2 = new System.Windows.Forms.TextBox();
-            this.lblTipoCuenta = new System.Windows.Forms.Label();
-            this.rbCliente = new System.Windows.Forms.RadioButton();
-            this.rbDealer = new System.Windows.Forms.RadioButton();
-            this.rbParticular = new System.Windows.Forms.RadioButton();
-            this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDireccion = new System.Windows.Forms.RichTextBox();
+            this.lblDireccion = new System.Windows.Forms.Label();
+            this.lblSexo = new System.Windows.Forms.Label();
+            this.cmbSexo = new System.Windows.Forms.ComboBox();
+            this.cmbCiudad = new System.Windows.Forms.ComboBox();
+            this.lblCiudad = new System.Windows.Forms.Label();
+            this.lblFechaNacimiento = new System.Windows.Forms.Label();
+            this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.txtCelular = new System.Windows.Forms.TextBox();
             this.lblCelular = new System.Windows.Forms.Label();
-            this.cmbFechaNacimiento = new System.Windows.Forms.DateTimePicker();
-            this.lblFechaNacimiento = new System.Windows.Forms.Label();
-            this.lblCiudad = new System.Windows.Forms.Label();
-            this.cmbCiudad = new System.Windows.Forms.ComboBox();
-            this.cmbSexo = new System.Windows.Forms.ComboBox();
-            this.lblSexo = new System.Windows.Forms.Label();
-            this.lblDireccion = new System.Windows.Forms.Label();
-            this.txtDireccion = new System.Windows.Forms.RichTextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.rbParticular = new System.Windows.Forms.RadioButton();
+            this.rbDealer = new System.Windows.Forms.RadioButton();
+            this.rbCliente = new System.Windows.Forms.RadioButton();
+            this.lblTipoCuenta = new System.Windows.Forms.Label();
+            this.txtContrasena2 = new System.Windows.Forms.TextBox();
+            this.txtContrasena1 = new System.Windows.Forms.TextBox();
+            this.txtCorreo = new System.Windows.Forms.TextBox();
+            this.txtNombreCuenta = new System.Windows.Forms.TextBox();
+            this.lblContrasena2 = new System.Windows.Forms.Label();
+            this.lblContrasena1 = new System.Windows.Forms.Label();
+            this.lblCorreo = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
             this.lineShape4 = new Microsoft.VisualBasic.PowerPacks.LineShape();
+            this.lineShape3 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.panel1.SuspendLayout();
             this.PanelLogin.SuspendLayout();
             this.PanelRegistro.SuspendLayout();
@@ -177,6 +177,19 @@
             this.txtContrasena.Enter += new System.EventHandler(this.TxtContrasena_Enter);
             this.txtContrasena.Leave += new System.EventHandler(this.txtContrasena_Leave);
             // 
+            // linkLabel1
+            // 
+            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.linkLabel1.Location = new System.Drawing.Point(138, 365);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(214, 20);
+            this.linkLabel1.TabIndex = 4;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "¿Haz olvidalo tu contraseña?";
+            // 
             // btnAcceder
             // 
             this.btnAcceder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
@@ -192,19 +205,6 @@
             this.btnAcceder.Text = "ACCEDER";
             this.btnAcceder.UseVisualStyleBackColor = false;
             this.btnAcceder.Click += new System.EventHandler(this.btnAcceder_Click);
-            // 
-            // linkLabel1
-            // 
-            this.linkLabel1.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkLabel1.LinkColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.linkLabel1.Location = new System.Drawing.Point(138, 365);
-            this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(214, 20);
-            this.linkLabel1.TabIndex = 4;
-            this.linkLabel1.TabStop = true;
-            this.linkLabel1.Text = "¿Haz olvidalo tu contraseña?";
             // 
             // shapeContainer2
             // 
@@ -254,132 +254,134 @@
             this.PanelRegistro.Size = new System.Drawing.Size(532, 448);
             this.PanelRegistro.TabIndex = 9;
             // 
-            // lblNombre
+            // label14
             // 
-            this.lblNombre.AutoSize = true;
-            this.lblNombre.Location = new System.Drawing.Point(16, 228);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(47, 13);
-            this.lblNombre.TabIndex = 0;
-            this.lblNombre.Text = "Nombre:";
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(16, 5);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(134, 20);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "Datos de usuario:";
             // 
-            // lblCorreo
+            // button1
             // 
-            this.lblCorreo.AutoSize = true;
-            this.lblCorreo.Location = new System.Drawing.Point(16, 51);
-            this.lblCorreo.Name = "lblCorreo";
-            this.lblCorreo.Size = new System.Drawing.Size(96, 13);
-            this.lblCorreo.TabIndex = 1;
-            this.lblCorreo.Text = "Correo electronico:";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button1.Location = new System.Drawing.Point(51, 417);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(190, 31);
+            this.button1.TabIndex = 28;
+            this.button1.Text = "Registrar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblContrasena1
+            // button2
             // 
-            this.lblContrasena1.AutoSize = true;
-            this.lblContrasena1.Location = new System.Drawing.Point(16, 89);
-            this.lblContrasena1.Name = "lblContrasena1";
-            this.lblContrasena1.Size = new System.Drawing.Size(64, 13);
-            this.lblContrasena1.TabIndex = 2;
-            this.lblContrasena1.Text = "Contraseña:";
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.button2.Location = new System.Drawing.Point(287, 417);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(190, 31);
+            this.button2.TabIndex = 27;
+            this.button2.Text = "Cancelar";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // lblContrasena2
+            // label13
             // 
-            this.lblContrasena2.AutoSize = true;
-            this.lblContrasena2.Location = new System.Drawing.Point(16, 132);
-            this.lblContrasena2.Name = "lblContrasena2";
-            this.lblContrasena2.Size = new System.Drawing.Size(110, 13);
-            this.lblContrasena2.TabIndex = 3;
-            this.lblContrasena2.Text = "Confirmar contraseña:";
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(16, 183);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(138, 20);
+            this.label13.TabIndex = 24;
+            this.label13.Text = "Datos personales:";
             // 
-            // txtNombreCuenta
+            // txtDireccion
             // 
-            this.txtNombreCuenta.Location = new System.Drawing.Point(82, 224);
-            this.txtNombreCuenta.Name = "txtNombreCuenta";
-            this.txtNombreCuenta.Size = new System.Drawing.Size(407, 20);
-            this.txtNombreCuenta.TabIndex = 4;
+            this.txtDireccion.Location = new System.Drawing.Point(116, 329);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(364, 65);
+            this.txtDireccion.TabIndex = 23;
+            this.txtDireccion.Text = "";
             // 
-            // txtCorreo
+            // lblDireccion
             // 
-            this.txtCorreo.Location = new System.Drawing.Point(141, 47);
-            this.txtCorreo.Name = "txtCorreo";
-            this.txtCorreo.Size = new System.Drawing.Size(348, 20);
-            this.txtCorreo.TabIndex = 5;
+            this.lblDireccion.AutoSize = true;
+            this.lblDireccion.Location = new System.Drawing.Point(16, 333);
+            this.lblDireccion.Name = "lblDireccion";
+            this.lblDireccion.Size = new System.Drawing.Size(55, 13);
+            this.lblDireccion.TabIndex = 22;
+            this.lblDireccion.Text = "Direccion:";
             // 
-            // txtContrasena1
+            // lblSexo
             // 
-            this.txtContrasena1.Location = new System.Drawing.Point(141, 85);
-            this.txtContrasena1.Name = "txtContrasena1";
-            this.txtContrasena1.Size = new System.Drawing.Size(348, 20);
-            this.txtContrasena1.TabIndex = 6;
-            this.txtContrasena1.TextChanged += new System.EventHandler(this.txtContrasena1_TextChanged);
+            this.lblSexo.AutoSize = true;
+            this.lblSexo.Location = new System.Drawing.Point(260, 294);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(34, 13);
+            this.lblSexo.TabIndex = 21;
+            this.lblSexo.Text = "Sexo:";
             // 
-            // txtContrasena2
+            // cmbSexo
             // 
-            this.txtContrasena2.Location = new System.Drawing.Point(141, 128);
-            this.txtContrasena2.Name = "txtContrasena2";
-            this.txtContrasena2.Size = new System.Drawing.Size(348, 20);
-            this.txtContrasena2.TabIndex = 7;
-            this.txtContrasena2.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            this.cmbSexo.FormattingEnabled = true;
+            this.cmbSexo.Items.AddRange(new object[] {
+            "Masculino",
+            "Femenino"});
+            this.cmbSexo.Location = new System.Drawing.Point(317, 290);
+            this.cmbSexo.Name = "cmbSexo";
+            this.cmbSexo.Size = new System.Drawing.Size(172, 21);
+            this.cmbSexo.TabIndex = 20;
+            this.cmbSexo.Text = "Seleccionar";
             // 
-            // lblTipoCuenta
+            // cmbCiudad
             // 
-            this.lblTipoCuenta.AutoSize = true;
-            this.lblTipoCuenta.Location = new System.Drawing.Point(16, 163);
-            this.lblTipoCuenta.Name = "lblTipoCuenta";
-            this.lblTipoCuenta.Size = new System.Drawing.Size(82, 13);
-            this.lblTipoCuenta.TabIndex = 8;
-            this.lblTipoCuenta.Text = "Tipo de cuenta:";
+            this.cmbCiudad.FormattingEnabled = true;
+            this.cmbCiudad.Items.AddRange(new object[] {
+            "Santiago de los caballeros",
+            "La Verga",
+            "Azua",
+            "Puerta Plata",
+            "San Juan",
+            "Santo Domingo",
+            "Dajabon",
+            "Mao",
+            "Esperanza"});
+            this.cmbCiudad.Location = new System.Drawing.Point(82, 290);
+            this.cmbCiudad.Name = "cmbCiudad";
+            this.cmbCiudad.Size = new System.Drawing.Size(172, 21);
+            this.cmbCiudad.TabIndex = 19;
+            this.cmbCiudad.Text = "Seleccionar";
+            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
-            // rbCliente
+            // lblCiudad
             // 
-            this.rbCliente.AutoSize = true;
-            this.rbCliente.Location = new System.Drawing.Point(141, 161);
-            this.rbCliente.Name = "rbCliente";
-            this.rbCliente.Size = new System.Drawing.Size(57, 17);
-            this.rbCliente.TabIndex = 9;
-            this.rbCliente.TabStop = true;
-            this.rbCliente.Text = "Cliente";
-            this.rbCliente.UseVisualStyleBackColor = true;
-            this.rbCliente.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
+            this.lblCiudad.AutoSize = true;
+            this.lblCiudad.Location = new System.Drawing.Point(16, 294);
+            this.lblCiudad.Name = "lblCiudad";
+            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
+            this.lblCiudad.TabIndex = 18;
+            this.lblCiudad.Text = "Ciudad:";
             // 
-            // rbDealer
+            // lblFechaNacimiento
             // 
-            this.rbDealer.AutoSize = true;
-            this.rbDealer.Location = new System.Drawing.Point(287, 161);
-            this.rbDealer.Name = "rbDealer";
-            this.rbDealer.Size = new System.Drawing.Size(56, 17);
-            this.rbDealer.TabIndex = 10;
-            this.rbDealer.TabStop = true;
-            this.rbDealer.Text = "Dealer";
-            this.rbDealer.UseVisualStyleBackColor = true;
-            this.rbDealer.CheckedChanged += new System.EventHandler(this.rbDealer_CheckedChanged);
+            this.lblFechaNacimiento.AutoSize = true;
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(16, 333);
+            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(94, 13);
+            this.lblFechaNacimiento.TabIndex = 17;
+            this.lblFechaNacimiento.Text = "Fecha nacimiento:";
             // 
-            // rbParticular
+            // cmbFechaNacimiento
             // 
-            this.rbParticular.AutoSize = true;
-            this.rbParticular.Location = new System.Drawing.Point(420, 161);
-            this.rbParticular.Name = "rbParticular";
-            this.rbParticular.Size = new System.Drawing.Size(69, 17);
-            this.rbParticular.TabIndex = 11;
-            this.rbParticular.TabStop = true;
-            this.rbParticular.Text = "Particular";
-            this.rbParticular.UseVisualStyleBackColor = true;
-            this.rbParticular.CheckedChanged += new System.EventHandler(this.rbParticular_CheckedChanged);
-            // 
-            // lblTelefono
-            // 
-            this.lblTelefono.AutoSize = true;
-            this.lblTelefono.Location = new System.Drawing.Point(16, 261);
-            this.lblTelefono.Name = "lblTelefono";
-            this.lblTelefono.Size = new System.Drawing.Size(52, 13);
-            this.lblTelefono.TabIndex = 12;
-            this.lblTelefono.Text = "Telefono:";
-            // 
-            // txtTelefono
-            // 
-            this.txtTelefono.Location = new System.Drawing.Point(82, 257);
-            this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(172, 20);
-            this.txtTelefono.TabIndex = 13;
+            this.cmbFechaNacimiento.Location = new System.Drawing.Point(116, 329);
+            this.cmbFechaNacimiento.Name = "cmbFechaNacimiento";
+            this.cmbFechaNacimiento.Size = new System.Drawing.Size(364, 20);
+            this.cmbFechaNacimiento.TabIndex = 16;
             // 
             // txtCelular
             // 
@@ -397,83 +399,132 @@
             this.lblCelular.TabIndex = 14;
             this.lblCelular.Text = "Celular:";
             // 
-            // cmbFechaNacimiento
+            // txtTelefono
             // 
-            this.cmbFechaNacimiento.Location = new System.Drawing.Point(116, 329);
-            this.cmbFechaNacimiento.Name = "cmbFechaNacimiento";
-            this.cmbFechaNacimiento.Size = new System.Drawing.Size(364, 20);
-            this.cmbFechaNacimiento.TabIndex = 16;
+            this.txtTelefono.Location = new System.Drawing.Point(82, 257);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(172, 20);
+            this.txtTelefono.TabIndex = 13;
             // 
-            // lblFechaNacimiento
+            // lblTelefono
             // 
-            this.lblFechaNacimiento.AutoSize = true;
-            this.lblFechaNacimiento.Location = new System.Drawing.Point(16, 333);
-            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
-            this.lblFechaNacimiento.Size = new System.Drawing.Size(94, 13);
-            this.lblFechaNacimiento.TabIndex = 17;
-            this.lblFechaNacimiento.Text = "Fecha nacimiento:";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.Location = new System.Drawing.Point(16, 261);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(52, 13);
+            this.lblTelefono.TabIndex = 12;
+            this.lblTelefono.Text = "Telefono:";
             // 
-            // lblCiudad
+            // rbParticular
             // 
-            this.lblCiudad.AutoSize = true;
-            this.lblCiudad.Location = new System.Drawing.Point(16, 294);
-            this.lblCiudad.Name = "lblCiudad";
-            this.lblCiudad.Size = new System.Drawing.Size(43, 13);
-            this.lblCiudad.TabIndex = 18;
-            this.lblCiudad.Text = "Ciudad:";
+            this.rbParticular.AutoSize = true;
+            this.rbParticular.Location = new System.Drawing.Point(420, 161);
+            this.rbParticular.Name = "rbParticular";
+            this.rbParticular.Size = new System.Drawing.Size(69, 17);
+            this.rbParticular.TabIndex = 11;
+            this.rbParticular.TabStop = true;
+            this.rbParticular.Text = "Particular";
+            this.rbParticular.UseVisualStyleBackColor = true;
+            this.rbParticular.CheckedChanged += new System.EventHandler(this.rbParticular_CheckedChanged);
             // 
-            // cmbCiudad
+            // rbDealer
             // 
-            this.cmbCiudad.FormattingEnabled = true;
-            this.cmbCiudad.Location = new System.Drawing.Point(82, 290);
-            this.cmbCiudad.Name = "cmbCiudad";
-            this.cmbCiudad.Size = new System.Drawing.Size(172, 21);
-            this.cmbCiudad.TabIndex = 19;
-            this.cmbCiudad.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.rbDealer.AutoSize = true;
+            this.rbDealer.Location = new System.Drawing.Point(287, 161);
+            this.rbDealer.Name = "rbDealer";
+            this.rbDealer.Size = new System.Drawing.Size(56, 17);
+            this.rbDealer.TabIndex = 10;
+            this.rbDealer.TabStop = true;
+            this.rbDealer.Text = "Dealer";
+            this.rbDealer.UseVisualStyleBackColor = true;
+            this.rbDealer.CheckedChanged += new System.EventHandler(this.rbDealer_CheckedChanged);
             // 
-            // cmbSexo
+            // rbCliente
             // 
-            this.cmbSexo.FormattingEnabled = true;
-            this.cmbSexo.Location = new System.Drawing.Point(317, 290);
-            this.cmbSexo.Name = "cmbSexo";
-            this.cmbSexo.Size = new System.Drawing.Size(172, 21);
-            this.cmbSexo.TabIndex = 20;
+            this.rbCliente.AutoSize = true;
+            this.rbCliente.Location = new System.Drawing.Point(141, 161);
+            this.rbCliente.Name = "rbCliente";
+            this.rbCliente.Size = new System.Drawing.Size(57, 17);
+            this.rbCliente.TabIndex = 9;
+            this.rbCliente.TabStop = true;
+            this.rbCliente.Text = "Cliente";
+            this.rbCliente.UseVisualStyleBackColor = true;
+            this.rbCliente.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
-            // lblSexo
+            // lblTipoCuenta
             // 
-            this.lblSexo.AutoSize = true;
-            this.lblSexo.Location = new System.Drawing.Point(260, 294);
-            this.lblSexo.Name = "lblSexo";
-            this.lblSexo.Size = new System.Drawing.Size(34, 13);
-            this.lblSexo.TabIndex = 21;
-            this.lblSexo.Text = "Sexo:";
+            this.lblTipoCuenta.AutoSize = true;
+            this.lblTipoCuenta.Location = new System.Drawing.Point(16, 163);
+            this.lblTipoCuenta.Name = "lblTipoCuenta";
+            this.lblTipoCuenta.Size = new System.Drawing.Size(82, 13);
+            this.lblTipoCuenta.TabIndex = 8;
+            this.lblTipoCuenta.Text = "Tipo de cuenta:";
             // 
-            // lblDireccion
+            // txtContrasena2
             // 
-            this.lblDireccion.AutoSize = true;
-            this.lblDireccion.Location = new System.Drawing.Point(16, 333);
-            this.lblDireccion.Name = "lblDireccion";
-            this.lblDireccion.Size = new System.Drawing.Size(55, 13);
-            this.lblDireccion.TabIndex = 22;
-            this.lblDireccion.Text = "Direccion:";
+            this.txtContrasena2.Location = new System.Drawing.Point(141, 128);
+            this.txtContrasena2.Name = "txtContrasena2";
+            this.txtContrasena2.Size = new System.Drawing.Size(348, 20);
+            this.txtContrasena2.TabIndex = 7;
+            this.txtContrasena2.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
-            // txtDireccion
+            // txtContrasena1
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(116, 329);
-            this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(364, 65);
-            this.txtDireccion.TabIndex = 23;
-            this.txtDireccion.Text = "";
+            this.txtContrasena1.Location = new System.Drawing.Point(141, 85);
+            this.txtContrasena1.Name = "txtContrasena1";
+            this.txtContrasena1.Size = new System.Drawing.Size(348, 20);
+            this.txtContrasena1.TabIndex = 6;
+            this.txtContrasena1.TextChanged += new System.EventHandler(this.txtContrasena1_TextChanged);
             // 
-            // label13
+            // txtCorreo
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(16, 183);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(138, 20);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Datos personales:";
+            this.txtCorreo.Location = new System.Drawing.Point(141, 47);
+            this.txtCorreo.Name = "txtCorreo";
+            this.txtCorreo.Size = new System.Drawing.Size(348, 20);
+            this.txtCorreo.TabIndex = 5;
+            // 
+            // txtNombreCuenta
+            // 
+            this.txtNombreCuenta.Location = new System.Drawing.Point(82, 224);
+            this.txtNombreCuenta.Name = "txtNombreCuenta";
+            this.txtNombreCuenta.Size = new System.Drawing.Size(407, 20);
+            this.txtNombreCuenta.TabIndex = 4;
+            // 
+            // lblContrasena2
+            // 
+            this.lblContrasena2.AutoSize = true;
+            this.lblContrasena2.Location = new System.Drawing.Point(16, 132);
+            this.lblContrasena2.Name = "lblContrasena2";
+            this.lblContrasena2.Size = new System.Drawing.Size(110, 13);
+            this.lblContrasena2.TabIndex = 3;
+            this.lblContrasena2.Text = "Confirmar contraseña:";
+            // 
+            // lblContrasena1
+            // 
+            this.lblContrasena1.AutoSize = true;
+            this.lblContrasena1.Location = new System.Drawing.Point(16, 89);
+            this.lblContrasena1.Name = "lblContrasena1";
+            this.lblContrasena1.Size = new System.Drawing.Size(64, 13);
+            this.lblContrasena1.TabIndex = 2;
+            this.lblContrasena1.Text = "Contraseña:";
+            // 
+            // lblCorreo
+            // 
+            this.lblCorreo.AutoSize = true;
+            this.lblCorreo.Location = new System.Drawing.Point(16, 51);
+            this.lblCorreo.Name = "lblCorreo";
+            this.lblCorreo.Size = new System.Drawing.Size(96, 13);
+            this.lblCorreo.TabIndex = 1;
+            this.lblCorreo.Text = "Correo electronico:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.Location = new System.Drawing.Point(16, 228);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(47, 13);
+            this.lblNombre.TabIndex = 0;
+            this.lblNombre.Text = "Nombre:";
             // 
             // shapeContainer1
             // 
@@ -487,51 +538,6 @@
             this.shapeContainer1.TabIndex = 25;
             this.shapeContainer1.TabStop = false;
             // 
-            // lineShape3
-            // 
-            this.lineShape3.Enabled = false;
-            this.lineShape3.Name = "lineShape3";
-            this.lineShape3.X1 = 3;
-            this.lineShape3.X2 = 530;
-            this.lineShape3.Y1 = 204;
-            this.lineShape3.Y2 = 204;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button2.Location = new System.Drawing.Point(287, 417);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(190, 31);
-            this.button2.TabIndex = 27;
-            this.button2.Text = "Cancelar";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.button1.Location = new System.Drawing.Point(51, 417);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(190, 31);
-            this.button1.TabIndex = 28;
-            this.button1.Text = "Registrar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(16, 5);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(134, 20);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Datos de usuario:";
-            // 
             // lineShape4
             // 
             this.lineShape4.Enabled = false;
@@ -540,6 +546,15 @@
             this.lineShape4.X2 = 528;
             this.lineShape4.Y1 = 26;
             this.lineShape4.Y2 = 26;
+            // 
+            // lineShape3
+            // 
+            this.lineShape3.Enabled = false;
+            this.lineShape3.Name = "lineShape3";
+            this.lineShape3.X1 = 3;
+            this.lineShape3.X2 = 530;
+            this.lineShape3.Y1 = 204;
+            this.lineShape3.Y2 = 204;
             // 
             // Login
             // 
