@@ -18,7 +18,7 @@ namespace Proyecto_Final_BDD
             imagen.Show();
             panelSeleccion.Show();
             panelCuenta.Hide();
-            panelVender.Hide();
+            PanelVender.Hide();
 
         }
 
@@ -72,7 +72,7 @@ namespace Proyecto_Final_BDD
             imagen.Show();
             panelSeleccion.Show();
             panelCuenta.Hide();
-            panelVender.Hide();
+            PanelVender.Hide();
           
 
         }
@@ -100,7 +100,7 @@ namespace Proyecto_Final_BDD
             PanelPaquetes.Hide();
             panelCompras.Hide();
             panelAnuncios.Show();
-            panelVender.Hide();
+            PanelVender.Hide();
         }
 
         private void label2_Click_1(object sender, EventArgs e)
@@ -122,7 +122,7 @@ namespace Proyecto_Final_BDD
             PanelPaquetes.Show();
             panelAnuncios.Hide();
             panelCompras.Hide();
-            panelVender.Hide();
+            PanelVender.Hide();
 
         }
 
@@ -131,7 +131,7 @@ namespace Proyecto_Final_BDD
             PanelPaquetes.Hide();
             panelCompras.Show();
             panelAnuncios.Hide();
-            panelVender.Hide();
+            PanelVender.Hide();
         }
 
         private void lblMisAnuncios_Click(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace Proyecto_Final_BDD
             PanelPaquetes.Hide();
             panelCompras.Hide();
             panelAnuncios.Show();
-            panelVender.Hide();
+            PanelVender.Hide();
         }
 
         private void label21_Click(object sender, EventArgs e)
@@ -163,7 +163,7 @@ namespace Proyecto_Final_BDD
             }
             var filename = d.FileName;
             var image = Image.FromFile(filename);
-            pictureBox1.Image = image;
+            imgFoto.Image = image;
 
         }
 
@@ -181,7 +181,7 @@ namespace Proyecto_Final_BDD
             PanelPaquetes.Hide();
             panelCompras.Hide();
             panelAnuncios.Hide();
-            panelVender.Show();
+            PanelVender.Show();
 
 
 
